@@ -1,0 +1,19 @@
+{
+  "name": "testproj",
+  "version": "1.0.0",
+  "description": "A TestProject for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspoonamore93/TestProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aspoonamore93/TestProject/issues"
+  },
+  "homepage": "https://github.com/aspoonamore93/TestProject#readme"
+}
