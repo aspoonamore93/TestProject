@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TestProj</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!--<div class="w3-container">
+    <h2>Tabs</h2>
+    <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects. Click on the links below.</p>
+</div>-->
+
+<div id="Container" style="margin: 0 auto; width:855px;">
+
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <table>
+        <tr>
+            <td>Strength:</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Dexterity:</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Constitution:</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Intelligence:</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Wisdom:</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Charisma:</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <h3>Abilities</h3>
+    <div class="w3-bar w3-black">
+        <!--Put Buttons in a flex box-->
+        <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Austin')">Austin</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('New York')">New York</button>
+    </div>
+
+    <div id="London" class="w3-container city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="w3-container city" style="display:none">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Austin" class="w3-container city" style="display:none">
+        <h2>Austin</h2>
+        <p>Filler</p>
+    </div>
+
+    <div id="New York" class="w3-container city" style="display:none">
+        <h2>New York</h2>
+        <p>Filler</p>
+    </div>
+
+    <h3>Special Abilities</h3>
+    <div class="w3-bar w3-black">
+        <!--Put Buttons in a flex box-->
+        <button class="w3-bar-item w3-button" onclick="openAby('Fly')">Fly</button>
+        <button class="w3-bar-item w3-button" onclick="openAby('Block')">Block</button>
+    </div>
+
+    <div id="Fly" class="w3-container aby">
+        <h2>Fly</h2>
+        <p>Filler</p>
+    </div>
+
+    <div id="Block" class="w3-container aby" style="display:none">
+        <h2>Block</h2>
+        <p>Filler</p>
+    </div>
+
+</div>
+
+<script>
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+    function openAby(cityName) {
+        var p;
+        var l = document.getElementsByClassName("aby");
+        for (p = 0; p < l.length; p++) {
+            l[p].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
+
+</body>
+</html>
